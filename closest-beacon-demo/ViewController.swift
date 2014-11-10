@@ -38,7 +38,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown }
         if (knownBeacons.count > 0) {
             let closestBeacon = knownBeacons[0] as CLBeacon
-            self.view.backgroundColor = self.colors[closestBeacon.minor]
+            self.view.backgroundColor = self.colors[closestBeacon.minor.integerValue]
         }
     }
     

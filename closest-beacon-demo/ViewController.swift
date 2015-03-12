@@ -13,6 +13,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"), identifier: "Estimotes")
+    // Note: make sure you replace the keys here with your own beacons' Minor Values
     let colors = [
         54482: UIColor(red: 84/255, green: 77/255, blue: 160/255, alpha: 1),
         31351: UIColor(red: 142/255, green: 212/255, blue: 220/255, alpha: 1),
